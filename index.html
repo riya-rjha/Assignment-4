@@ -5,61 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 1</title>
-    <style>
-        form{
-            border: 8px solid rgb(211, 91, 91);
-            border-radius: 10px;
-            margin: auto;
-            padding: 10px;
-            text-align: center;
-            align-items: center;
-            background-image: url("https://plus.unsplash.com/premium_photo-1679941208830-d621aa499fa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
-        }
-        body{
-            background-image: url("nice.gif");
-            color: rgb(0, 81, 54);
-            text-decoration: underline;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        #details{
-            color: rgb(0, 46, 85);
-            text-decoration: solid;
-            text-decoration: underline;
-            font-family: Vina Sans;
-            font-weight: bolder;
-        }
-        #submit{
-            margin-right: 100px;
-            border: 4px solid rebeccapurple;
-           
-        }
-        #reset{
-            border: 4px solid rebeccapurple;
-            margin-left: 100px;
-        }
-    </style>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyCSS.css">
 </head>
 
 <body>
-    <form action="backend.php">
-        <p id="details">
-            Enter Your Details :
-        </p>
-        <div>
-            <label for="name">UserName :</label>
-            <input type="name" name="myname" id="name">
-        </div>
-        <br>
-        <div>
-            <label for="pass">Password :</label>
-            <input type="password" name="Mypass" id="pass">
+    <h1>Survey Form</h1>
+    <form action=" " method="post">
 
-        </div>
+        <!-- NAME -->
+
+        <p id="name">Name * : </p>
         <br>
-            <input type="submit" value="Submit" id="submit">
-            <input type="reset" value="Reset" id="reset">
+        <label for="fname">First Name : <input type="text" id="fname" name="fname" required></label>
+        <br>
+        <br>
+        <label for="lname">Last Name : <input type="text" id="lname" name="lname" required></label>
+        <br>
+        <br>
+        <!-- Address -->
+
+        <p id="address">Address * : </p>
+        <p><label for="street">Street * : <input type="text" id="street" name="street" required>
+            </label></p>
+
+        <p><label for="city">City * : <input type="text" id="city" name="city" required>
+            </label></p>
+
+        <p><label for="state">State * :
+                <select name="state" id="state">
+                    <option value="up">Uttar Pradesh</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="maharshtra">Maharashtra</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="madhya pradesh">Madhya Pradesh</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="tamil nadu">Tamil Nadu</option>
+                </select>
+            </label></p>
+
+        <p><label for="pin">Pin Code * : <input type="number" name="pin" id="pin">
+            </label></p>
+
+        <!-- Contact No -->
+        <label for="contact">Contact No * : <input type="number" name="contact" id="contact">
+        </label>
+        <!-- Rating Section     -->
+
+        <p id="qualityProducts">Quality of Products * :
+            Excellent <input type="radio" name="Excellent" id="quality" required>
+            Good <input type="radio" name="Good" id="quality" required>
+            Bad <input type="radio" name="Bad" id="quality" required>
+        </p>
+
+        <p id="moneyProducts">Value For Money * :
+            Excellent <input type="radio" name="Excellent" id="money" required>
+            Good <input type="radio" name="Good" id="money" required>
+            Bad <input type="radio" name="Bad" id="money" required>
+        </p>
+
+        <p id="deliveryProducts">Delivery * :
+            Excellent <input type="radio" name="Excellent" id="delivery" required>
+            Good <input type="radio" name="Good" id="delivery" required>
+            Bad <input type="radio" name="Bad" id="delivery" required>
+        </p>
+
+        <input type="submit" value="Submit Now" id="submit">
+        <input type="reset" value="Reset Now" id="reset">
+
     </form>
+
 </body>
 
 </html>
