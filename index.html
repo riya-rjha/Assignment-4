@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        form{
+            border: 8px solid rgb(211, 91, 91);
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            background-image: url("https://plus.unsplash.com/premium_photo-1679941208830-d621aa499fa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+        }
+        body{
+            background-image: url("nice.gif");
+            color: rgb(0, 81, 54);
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #details{
+            color: rgb(0, 46, 85);
+            text-decoration: solid;
+            text-decoration: underline;
+            font-family: Vina Sans;
+            font-weight: bolder;
+        }
+        #submit{
+            margin-right: 100px;
+            border: 4px solid rebeccapurple;
+           
+        }
+        #reset{
+            border: 4px solid rebeccapurple;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <p id="details">
+            Enter Your Details :
+        </p>
+        <div>
+            <label for="name">UserName :</label>
+            <input type="name" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="pass">Password :</label>
+            <input type="password" name="Mypass" id="pass">
+
+        </div>
+        <br>
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
+    </form>
+</body>
+
+</html>
